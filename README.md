@@ -35,4 +35,4 @@ The completed application should meet the following criteria:
   * On mobile devices, anything under 768px, should show 1/3
 
 ## Solution 
-Couldn't make resize screen to 1 column and also screen glow.
+Couldn't make screen glow.

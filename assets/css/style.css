@@ -52,7 +52,7 @@ main {
 
 .column {
     /*border: 1px solid green; */
-
+    flex: 1 0 30%;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -74,7 +74,7 @@ main {
 
 .card-header {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--txtcolor);
     border: 2px solid var(--codecolor);
     background-color: var(--bgcolor);
@@ -122,6 +122,7 @@ main {
     );
     display: flex;
     justify-content: flex-start;
+    min-height: 340px;
 }
 
 .card pre:active {
@@ -134,7 +135,7 @@ main {
 }
 
 @media screen and (min-width: 300px) {
-    .card-column {
+    .column {
       flex: 0 1 90%;
       max-width: 90%;
     }
@@ -142,15 +143,15 @@ main {
 
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
+    .column {
       flex: 0 0 45%;
       max-width: 45%;
     }
 }
   
 /* media query for larger screens */
-@media screen and (min-width: 992px) {
-    .card-column {
+@media screen and (min-width: 2200px) {
+    .column {
       flex: 0 0 30%;
       max-width: 30%;
     }
